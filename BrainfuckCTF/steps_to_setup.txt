@@ -1,0 +1,7 @@
+Make a python venv in this folder with `pip3 install venv` followed by `python -m venv venv` and finally `source venv/bin/activate`
+Start off by installing the requirements for the Flask environment to work `pip install -r requirements.txt`
+Head to `/stuff` and place the flag for this challenge in `real_flag.txt`
+Generate a GPG Key with `gpg --full-generate-key` - Options --> 1, ENTER, ENTER, y, Johnnie, try@harder.hacksoc, ENTER, O, 123456789, 123456789
+In stuff `gpg --output my_key.pgp --armor --export-secret-key try@harder.hacksoc`
+Followed by `gpg --encrypt -r try@harder.hacksoc real_flag.txt`
+You can then use `rm real_flag.txt && rm ../steps_to_setup.txt" 
