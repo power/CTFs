@@ -1,0 +1,6 @@
+Ensure Apache2 & PHP are installed on the server.
+Ensure that the port for the HTTP server is enabled with UFW
+Copy the other two files in this folder to /var/www/html (or wherever the Apache2 server is configured to)
+Start Apache2 service.
+
+It may be worth looking into a script that clears the directory periodically to avoid people using other peoples scripts, as users will be writing their own files to the server to get the flag.
